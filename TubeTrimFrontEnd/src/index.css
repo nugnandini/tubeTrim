@@ -1,0 +1,104 @@
+:root {
+  --brown: #8F7A6E;
+  --white: #FAF5F1;
+  --ink: #292F36;
+  --red: #A41F13;
+  --beige: #E0DBD8;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  background-color: var(--white);
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+h1{
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+h2{
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+button{
+  padding-inline: 2rem;
+  padding-block: .75rem;
+  border: solid 1px var(--ink);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(164, 31, 19, 0.1);
+  border-color: var(--red);
+  cursor: pointer;
+}
+
+input{
+  min-width: 50svw;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  input{
+    min-width: 60svw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  button{
+    padding-inline: 1.5rem;
+    padding-block: .625rem;
+    font-size: 1rem;
+  }
+  input{
+    min-width: 70svw;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body{
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  button{
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    font-size: 1rem;
+  }
+  input{
+    min-width: 70svw;
+  }
+}
+
+

@@ -1,0 +1,408 @@
+body{
+  background-color: var(--brown);
+}
+
+.appHeroSection{
+  color: var(--beige);
+  height: 100svh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  justify-content: center;
+  padding-inline: 4rem;
+  
+  margin-inline: auto;
+}
+
+.appHeroSection h1{
+  color: var(--ink);
+}
+
+.appHeroSection h1 span{
+  color: var(--white);
+}
+
+.appCategoriesSection{
+  background-color: var(--white);
+  padding: 5rem;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.appCategoriesSectionContent{
+  max-width: 40rem;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+
+  .grid3by3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  
+}
+
+@media (max-width: 1024px) {
+  .grid3by3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid3by3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+
+.redText{
+  color: var(--red);
+  padding-block: 2rem;
+}
+
+.selected{
+  background-color: var(--ink);
+  color: var(--white);
+}
+
+.redButton{
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.searchBar{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem;
+  font-size: 1rem;
+}
+
+.searchResults {
+  background-color: var(--beige);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .searchResults {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchResults {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+input {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.youtuberSearchResultItem{
+ 
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dp{
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.bgBeige{
+  background-color: var(--beige);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  max-width: 35rem;
+  margin: auto;
+  font-size: .875rem;
+}
+
+.selectedChannelDisplay{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.removeButton{
+  padding: .25rem;
+  font-size: .75rem;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.lightHeroSection{
+  color: var(--ink);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  
+  padding: 5rem;
+  align-items: center;
+  min-height: 100svh;
+  margin-inline: auto;
+  background-color: var(--white);
+  padding-top: 10rem;
+  
+  
+}
+
+.displayChannels{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.videoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.videoCard {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.videoCard:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.videoThumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.videoTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.videoMeta {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.watchPage {
+  background-color: var(--white);
+  
+  margin: 0 auto;
+  padding: 8rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.watchPlayer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.watchIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.watchTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.appWrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: transparent;
+}
+
+.navLogo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navLogoIcon {
+  height: 1.5rem;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.navSettings {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.navSettings:hover {
+  background-color: var(--beige);
+}
+
+.navSettingsIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: block;
+}
+
+/* .navbar--brown{
+  background-color: var(--brown);
+}
+
+.navbar--white{
+  background-color: var(--white);
+} */
+
+.settingsCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  border-top: 1px solid var(--ink);
+  padding: 3rem 0;
+}
+
+.settingsCategoryHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 3rem;
+}
+
+.settingsCategoryBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.settingsChannels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+
+@media (max-width: 1024px) {
+  .appHeroSection { padding-inline: 3rem; gap: 3rem; }
+  .appCategoriesSection { padding: 3.5rem; }
+  .appCategoriesSectionContent { gap: 3rem; }
+  .lightHeroSection { padding: 3.5rem; padding-top: 8rem; }
+  .searchBar { margin: 1.5rem; gap: 1.5rem; }
+  .searchResults { padding: 1.25rem; }
+  .bgBeige { padding: 1.25rem; }
+  .videoGrid { padding: 2rem; gap: 1.5rem; }
+  .watchPage { padding: 5rem 3rem; }
+  .navbar { padding: 1.25rem 2rem; }
+  .settingsCategory { padding: 2rem 0; }
+  .settingsCategoryHeader { padding-block: 2rem; }
+  .settingsCategoryBody { gap: 2rem; }
+  .displayChannels { gap: 2rem; }
+}
+
+
+@media (max-width: 768px) {
+  .appHeroSection { padding-inline: 2rem; gap: 4rem; }
+  .appCategoriesSection { padding: 2.5rem; }
+  .appCategoriesSectionContent { gap: 2rem; }
+  .lightHeroSection { padding: 2rem; padding-top: 7rem; gap: 3rem; }
+  .searchBar { margin: 1rem; gap: 1rem; }
+  .searchResults { padding: 1rem; }
+  .bgBeige { padding: 1rem; }
+  .videoGrid { padding: 1.5rem; gap: 1.25rem; }
+  .watchPage { padding: 8rem 1rem; gap: 1rem; }
+  .navbar { padding: 1rem 1.5rem; }
+  .settingsCategory { padding: 1.5rem 0; }
+  .settingsCategoryHeader { padding-block: 1.5rem; }
+  .settingsCategoryBody { gap: 1.5rem; }
+  .displayChannels { gap: 1.5rem; }
+}
+
+
+@media (max-width: 480px) {
+  .appHeroSection { padding-inline: 1.5rem; gap: 3rem; }
+  .appCategoriesSection { padding: 1rem; }
+  .appCategoriesSectionContent { gap: 1.5rem; }
+  .lightHeroSection { padding: 1rem; padding-top: 8rem; gap: 4rem; min-width: 100svw;}
+  .searchBar { margin: 1rem; gap: 1rem; }
+  .searchResults { padding: 1rem; }
+  .bgBeige { padding: 1rem; }
+  .videoGrid { padding: 1rem; gap: 1rem; }
+  .watchPage { padding: 8rem 1rem; }
+  .navbar { padding: 1rem; }
+  .settingsCategory { padding: 1rem 0rem; }
+  .settingsCategoryHeader { padding-block: 1rem; }
+  .settingsCategoryBody { gap: 1rem; }
+  .displayChannels { gap: 1rem; }
+}
