@@ -68,3 +68,8 @@ Settings page lets you:
 ![Settings](screenshots/settings1.png)
 ![Settings — category](screenshots/settings2.png)
 ![Settings — channel search](screenshots/settings3.png)
+
+
+## Watch the tubeTrim Demo video
+
+[![Watch the tubeTrim demo](screenshots/onboarding.png)](https://www.loom.com/share/6268688548ce49ac997aa2443c4bd7a7)
