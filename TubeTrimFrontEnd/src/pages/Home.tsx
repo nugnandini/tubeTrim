@@ -103,7 +103,7 @@ function Home() {
           .find(item => item.category === category)
           ?.channels.map(ch => (
             <div key={ch.channelId} onClick={()=>handlePageRedirect(ch.channelId)}>
-              <img className='dp' src={ch.thumbnail} />
+              <img className='dp' src={ch.thumbnail} referrerPolicy="no-referrer" />
               <p>{ch.title}</p>
             </div>
           ))

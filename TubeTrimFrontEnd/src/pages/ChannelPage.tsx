@@ -115,7 +115,7 @@ function ChannelPage() {
   {InputValue!=''&&<div className="videoGrid">
      {searchResults.map(item => (
       <div className="videoCard" key={item.videoId} onClick={()=>handleRedirect(item.videoId)}>
-        <img className="videoThumb" src={item.thumbnail} />
+        <img className="videoThumb" src={item.thumbnail} referrerPolicy="no-referrer" />
         <p className="videoTitle">{item.title}</p>
         <p className="videoMeta">{item.publishedAt}</p>
       </div>
@@ -129,7 +129,7 @@ function ChannelPage() {
   {InputValue===''&&<div className="videoGrid">
     {data.map(item => (
       <div className="videoCard" key={item.videoId} onClick={()=>handleRedirect(item.videoId)}>
-        <img className="videoThumb" src={item.thumbnail} />
+        <img className="videoThumb" src={item.thumbnail} referrerPolicy="no-referrer" />
         <p className="videoTitle">{item.title}</p>
         <p className="videoMeta">{item.publishedAt}</p>
       </div>

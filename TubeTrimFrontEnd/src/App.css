@@ -240,14 +240,16 @@ input {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  
 }
 
 .watchPlayer {
-  width: 100%;
+  
   aspect-ratio: 16 / 9;
   background-color: #000;
   border-radius: 0.5rem;
   overflow: hidden;
+  
 }
 
 .watchIframe {
@@ -394,7 +396,7 @@ input {
   .appHeroSection { padding-inline: 1.5rem; gap: 3rem; }
   .appCategoriesSection { padding: 1rem; }
   .appCategoriesSectionContent { gap: 1.5rem; }
-  .lightHeroSection { padding: 1rem; padding-top: 8rem; gap: 4rem; min-width: 100svw;}
+  .lightHeroSection { padding: 1rem; padding-top: 8rem; gap: 4rem;}
   .searchBar { margin: 1rem; gap: 1rem; }
   .searchResults { padding: 1rem; }
   .bgBeige { padding: 1rem; }

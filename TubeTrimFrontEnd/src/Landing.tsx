@@ -76,7 +76,7 @@ const API_URL = import.meta.env.VITE_API_URL
           {inputValue!=''&&<div className='searchResults'>
           {inputValue!=''&&data.map(item=>
           <div className='youtuberSearchResultItem' key={item.channelId} onClick={()=>onSelect(item)}>
-            <img className='dp' src={item.thumbnail}/>
+            <img className='dp' src={item.thumbnail} referrerPolicy="no-referrer"/>
             <p>{item.title}</p>
           </div>
           )}
@@ -85,7 +85,7 @@ const API_URL = import.meta.env.VITE_API_URL
         {selection.length>0&&<div className='bgBeige'>
         {selection.map(item=>
         <div className='selectedChannelDisplay' key={item.channelId} >
-            <img className='dp' src={item.thumbnail}/>
+            <img className='dp' src={item.thumbnail} referrerPolicy="no-referrer"/>
             <p>{item.title}</p>
             <button className='removeButton' onClick={()=>onRemove(item.channelId)}>X</button>
           </div>)}
